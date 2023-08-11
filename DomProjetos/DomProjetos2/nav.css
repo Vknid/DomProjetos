@@ -1,0 +1,55 @@
+nav.css
+/* Inicia alguns estilos padrões */
+body, h1, h2, h3, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Navbar estilo */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cecccc;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .logo img {
+    height: 40px; 
+  }
+  
+  .nav-center {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Media query para responsivo */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .nav-links {
+      margin-top: 10px;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  }
+  

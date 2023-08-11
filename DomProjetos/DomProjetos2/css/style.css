@@ -1,0 +1,205 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+/* Tags Básicas */
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    
+
+}
+header {
+    width: 100%;
+    background: #787575;
+}
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.01em;
+}
+
+/* Cabeçalho */
+header div#faixa_azul {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to bottom, #11111f, #5b5a5a);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    
+       
+}
+
+
+
+header div#barra {
+    width: 100%;
+    height: 100px;
+    background-color:rgb(99, 98, 98);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+/* Corpo */
+main div#equipe {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+    main div p {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    }
+    h1.titulo{
+    color: #84bd00;
+    font-family: 'Comfortaa', cursive;
+    border: black;
+    
+}
+
+h2.titulo{
+color: #b0b0b0;
+font-family: 'Comfortaa', cursive;
+border: black;
+
+}
+    .container-carrossel {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+        margin-top: 160px;
+      
+      }
+      
+      .container-images {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1100px;
+      
+        
+      }
+      
+      .slider {
+        opacity: 0;
+        transition: opacity .7s;
+        position: absolute;
+        left: 0px;
+        top: -200px;
+        width: 100%;
+        height: 600px;
+        border-radius: 10px;
+      }
+      
+      .on {
+        opacity: 1;
+      }
+      
+      #prev-button, #next-button {
+        width: 2px;
+        height: 2px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        margin: 10px;
+        z-index: 10;
+        text-align: center;
+      }
+      
+      #prev-button img, #next-button img{
+        background-color: rgba(169, 148, 148, 0.3);
+        border-radius: 100%;
+        width: 100px;
+        
+      }
+      
+      #prev-button {
+        transform: rotate(180deg);
+        margin-top: 220px;
+      }
+      #barra {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px; 
+        background-color: blue;
+      }
+    
+      .titulo {
+        margin: 0;
+      }
+      header div#barradivisao {
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(to bottom, #11111f, #5b5a5a);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        
+           
+    }
+
+    
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 350px; /* Ajuste o tamanho da logo conforme desejado */
+    margin-left: 10px; /* Ajuste a margem esquerda conforme desejado */
+    height: 500px;
+}
+
+.nav-center {
+    flex-grow: 1; /* Ocupa o espaço disponível entre logo e itens da direita */
+    text-align: center;
+    margin-top: -5px; /* Ajuste a margem superior conforme desejado */
+    height: 230px;
+}
+
+
+.nav-right ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+   position: absolute;
+   left: 1400px;
+   top: 30px;
+    
+   
+   
+}
+
+.nav-right li {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.01em;
+    height: 100%;
+    transition: color 0.3s; 
+    color: white;
+
+    
+}
+
+.nav-right li:hover {
+    color: #84bd00; 
+}
